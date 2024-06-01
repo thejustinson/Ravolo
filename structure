@@ -1,0 +1,33 @@
+ravolo/
+├── public/
+│   ├── images/
+│   │   └── myImage.png
+│   └── ...
+├── src/
+│   ├── components/
+│   │   ├── EventForm.tsx
+│   │   ├── EventList.tsx
+│   │   └── RegistrationForm.tsx
+│   ├── pages/
+│   │   ├── api/
+│   │   │   ├── create-event.ts
+│   │   │   └── register.ts
+│   │   ├── events/
+│   │   │   ├── [id].tsx
+│   │   │   └── index.tsx
+│   │   ├── index.tsx
+│   │   └── _app.tsx
+│   ├── styles/
+│   │   └── globals.css
+│   ├── utils/
+│   │   ├── arweave.ts
+│   │   ├── solana.ts
+│   │   └── db.ts
+│   ├── hooks/
+│   │   └── useWallet.ts
+│   └── types/
+│       └── index.ts
+├── .env.local
+├── package.json
+├── tsconfig.json
+└── README.md
