@@ -3,7 +3,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div className='h-fit min-h-svh selection:text-neutral-50 selection:bg-purple-700'>
+    <div className='h-fit min-h-svh selection:text-neutral-50 overflow-hidden selection:bg-purple-700'>
       <Hero/>
     </div>
   )

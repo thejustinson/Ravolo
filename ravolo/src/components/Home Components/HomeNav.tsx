@@ -1,34 +1,21 @@
 "use client"
-
-import Image from "next/image"
 import {motion} from "framer-motion"
 import { AnimationVariants } from "@/utils/AnimationVariants"
 import { RiArrowRightUpLine } from "@remixicon/react"
 import Link from "next/link"
+import Logo from "../Universal Components/Logo"
 
 const HomeNav = () => {
   return (
     <motion.div 
-        className="px-10 py-5 flex justify-between items-center"
+        className="relative px-10 py-5 flex justify-center md:justify-between items-center select-none"
         variants={AnimationVariants.dropNav}
         initial='initial'
         animate='animate'
     >
-        <Link href={''}>
-            <div className="flex gap-2 items-center overflow-x-hidden min-w-[200px]">
-                <Image src={'/logo-white.svg'} width={100} height={100} alt="Ravolo Logo" className="max-w-[35px]"/>
-                <motion.span 
-                    className="text-xl"
-                    variants={AnimationVariants.textSlideRight}
-                    initial='initial'
-                    animate='animate'
-                >
-                    Ravolo
-                </motion.span>
-            </div>
-        </Link>
+        <Logo/>
 
-        <div className="flex gap-4 items-center">
+        <div className="md:flex gap-4 items-center hidden">
             <Link href={'events'}>
                 <button className="flex items-center gap-1 group duration-200">
                     <span>Browse Events</span>
