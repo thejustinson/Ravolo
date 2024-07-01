@@ -5,7 +5,7 @@ import { AnimationVariants } from "@/utils/AnimationVariants"
 
 const Logo = () => {
   return (
-    <Link href={''}>
+    <Link href={'/'}>
         <div className="flex gap-2 justify-center md:justify-start items-center overflow-x-hidden md:min-w-[200px]">
             <Image src={'/logo-white.svg'} width={100} height={100} alt="Ravolo Logo" className="max-w-[25px] md:max-w-[35px]"/>
             <motion.span 

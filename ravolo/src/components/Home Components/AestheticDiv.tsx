@@ -1,7 +1,7 @@
 "use client"
 
 import {motion} from "framer-motion"
-import Comet from "../Comet"
+import Comet from "../../utils/Comet"
 
 interface AestheticDivProps{
   aestheticGradientTop: number

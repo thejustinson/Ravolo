@@ -2,7 +2,7 @@
 
 import {motion} from "framer-motion"
 import { AnimationVariants } from "@/utils/AnimationVariants"
-import { useEffect, useRef } from "react"
+import { useRef } from "react"
 
 interface HeroMessageProps{
     setAestheticGradientTop: (aestheticGradientTop: number) => void;
@@ -10,7 +10,7 @@ interface HeroMessageProps{
 
 const HeroMessage = ({setAestheticGradientTop}: HeroMessageProps) => {
 
-    const connectWalletBtn = useRef<HTMLButtonElement>(null);
+  const connectWalletBtn = useRef<HTMLButtonElement>(null);
 
   const afterAnimationIsComplete = () => {
       if (connectWalletBtn.current) {
